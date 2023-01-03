@@ -1,5 +1,5 @@
 pragma solidity ^0.8.9;
- 
+
 contract Lottery {
     // global variable to store manager address
     address public manager;

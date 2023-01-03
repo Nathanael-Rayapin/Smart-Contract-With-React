@@ -12,7 +12,7 @@ beforeEach(async () => {
     // Get a list of all accounts
     accounts = await web3.eth.getAccounts();
 
-     // Use one of those accounts to deploy the contract
+    // Use one of those accounts to deploy the contract
     lottery = await new web3.eth.Contract(module.abi)
     .deploy({ data: module.evm.bytecode.object })
     .send({ from: accounts[0], gas: '1000000' });
